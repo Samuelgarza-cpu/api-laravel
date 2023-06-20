@@ -71,24 +71,5 @@ class enviarwaController extends Controller
 
      public function notificacion(){
 
-        $client = new \GuzzleHttp\Client();
-$headers = [
-  'Content-Type' => 'application/json',
-  'Authorization' => 'Bearer EAAK62RGI82sBAAjmNl1LZCueONETo4MD09UUtXll82gcRw4uTZBjgQqvQ3oblu8s18WtMTgbQT62GZCF5wiKhIkqO37ZA4pLrfw9dZAfBWXqsCFlZC0fDRiSytm80s5orBmWiNdc0OJD40KceQIDY7xx0jDqWpZBLBESfuzMZBqORa7f6WiW0jFZBlAXXXxOK7ZCR3rbuwLYEvFgZDZD'
-];
-$body = '{
-  "messaging_product": "whatsapp",
-  "to": "528713307800",
-  "type": "template",
-  "template": {
-    "name": "hello_world",
-    "language": {
-      "code": "en_US"
-    }
-  }
-}';
-$request = new \GuzzleHttp\Psr7\Request('POST', 'https://graph.facebook.com/v17.0/115027494955174/messages', $headers, $body);
-$res = $client->sendAsync($request)->wait();
-echo $res->getBody();
                 }
 }
