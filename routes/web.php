@@ -20,6 +20,7 @@ use PHPMailer\PHPMailer\Exception;
 */
 
 Route::get('/', function () {
+    // return view('pruebas');
     return view('welcome');
 });
 
@@ -60,10 +61,5 @@ Route::get('/correo',function (){
     });
 
 
-Route::post('/mensaje',function (){
 
-
-
-    
-});
 

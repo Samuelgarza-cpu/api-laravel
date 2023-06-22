@@ -4,6 +4,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UsuarioController;
 use App\Http\Controllers\RequisicionController;
+use App\Http\Controllers\oficiosController;
 
 
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
@@ -14,3 +15,4 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
 Route::apiResource('usuario',UsuarioController::class);
 Route::apiResource('requis',RequisicionController::class);
+Route::get('pdf', [ oficiosController::class,'pdf']);
