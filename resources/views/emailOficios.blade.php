@@ -7,6 +7,6 @@
     <title>Oficio</title>
 </head>
 <body>
-    <h4>LE ENVIARON UN OFICIO, <a href="http://localhost:8000/{{$data}}">LEER</a> </h4> 
+    <h4>LE ENVIARON UN OFICIO, <a href="https://api.gomezpalacio.gob.mx/{{$data}}">LEER</a> </h4> 
 </body>
 </html>
