@@ -15,4 +15,4 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
 Route::apiResource('usuario',UsuarioController::class);
 Route::apiResource('requis',RequisicionController::class);
-Route::get('pdf', [ oficiosController::class,'pdf']);
+Route::post('pdf', [ oficiosController::class,'pdf']);
