@@ -12,7 +12,7 @@ class oficiosController extends Controller
     public function pdf(Request $request){       
         try {
             $nombreArchivo ='/Oficio'.uniqid().time().'.pdf';
-            $pdf = Pdf::loadView('oficio',compact('request'))->setPaper('a4', 'portrait')->save(public_path().$nombreArchivo);
+            // $pdf = Pdf::loadView('oficio',compact('request'))->setPaper('a4', 'portrait')->save(public_path().$nombreArchivo);
             // $envio = Mail::to($request->Correo)->send(new oficios($nombreArchivo));
             // dd($envio);
             return 1;
